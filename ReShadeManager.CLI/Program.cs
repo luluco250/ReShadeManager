@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using ReShadeManager.CLI.Commands;
 using ReShadeManager.CLI.Utils;
 using ReShadeManager.Core;
@@ -13,7 +14,9 @@ namespace ReShadeManager.CLI
 			{
 				var mgr = new ReShadeManagerRuntime
 				(
-					rootPath: AppDomain.CurrentDomain.BaseDirectory ?? ""
+					rootPath: Directory.GetCurrentDirectory()
+					// Does not seem to work when publish as a self-contained exe.
+					//rootPath: AppDomain.CurrentDomain.SetupInformation.ApplicationBase ?? ""
 				);
 
 				Console.WriteLine($"Starting with root path: {mgr.RootPath}");
@@ -21,7 +24,7 @@ namespace ReShadeManager.CLI
 				Console.WriteLine(
 					mgr.LoadConfig()
 						? "Configuration loaded."
-						: "No configuration found, a new one was created.");
+						: "No configuration found, using defaults.");
 
 				if (!mgr.TryLoadGit())
 				{

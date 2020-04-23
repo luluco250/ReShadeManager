@@ -7,11 +7,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		.gitignore = .gitignore
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReShadeManager.Core", "ReShadeManager.Core\ReShadeManager.Core.csproj", "{8702B205-761C-4D65-953B-690CF1F187C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReShadeManager.Core", "ReShadeManager.Core\ReShadeManager.Core.csproj", "{8702B205-761C-4D65-953B-690CF1F187C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReShadeManager.CLI", "ReShadeManager.CLI\ReShadeManager.CLI.csproj", "{E0C113DA-A33F-4AEE-BAD1-6E0437F513B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReShadeManager.CLI", "ReShadeManager.CLI\ReShadeManager.CLI.csproj", "{E0C113DA-A33F-4AEE-BAD1-6E0437F513B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
