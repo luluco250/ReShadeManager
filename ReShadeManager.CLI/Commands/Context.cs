@@ -85,7 +85,7 @@ namespace ReShadeManager.CLI.Commands
 					$"Installation path {installPath} already exists, remove?",
 					allowDefault: false,
 					(ConsoleKey.Y, "Yes"),
-					(ConsoleKey.N, "No")) ==  ConsoleKey.Y)
+					(ConsoleKey.N, "No")) == ConsoleKey.Y)
 				{
 					switch (kind)
 					{

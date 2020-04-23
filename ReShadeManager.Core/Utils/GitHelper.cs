@@ -18,7 +18,7 @@ namespace ReShadeManager.Core.Utils
 			var git = Process.Start(new ProcessStartInfo
 			{
 				FileName = GitCommandLine,
-				ArgumentList = {"clone", url, destination},
+				ArgumentList = { "clone", url, destination },
 				UseShellExecute = true,
 				CreateNoWindow = true,
 				WindowStyle = ProcessWindowStyle.Hidden
@@ -36,7 +36,7 @@ namespace ReShadeManager.Core.Utils
 			var git = Process.Start(new ProcessStartInfo
 			{
 				FileName = GitCommandLine,
-				ArgumentList = {"checkout", "origin", branch},
+				ArgumentList = { "checkout", "origin", branch },
 				WorkingDirectory = repositoryPath,
 				UseShellExecute = true,
 				CreateNoWindow = true,
@@ -55,7 +55,7 @@ namespace ReShadeManager.Core.Utils
 			var git = Process.Start(new ProcessStartInfo
 			{
 				FileName = GitCommandLine,
-				ArgumentList = {"pull", "origin", branch},
+				ArgumentList = { "pull", "origin", branch },
 				WorkingDirectory = repositoryPath,
 				UseShellExecute = true,
 				CreateNoWindow = true,
@@ -83,7 +83,7 @@ namespace ReShadeManager.Core.Utils
 				commandLine = "git";
 				return true;
 			}
-			catch {}
+			catch { }
 
 			foreach (var p in new[]
 			{

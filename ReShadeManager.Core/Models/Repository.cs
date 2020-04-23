@@ -8,7 +8,7 @@ namespace ReShadeManager.Core.Models
 
 		public string Branch { get; set; } = "master";
 
-		public Repository() {}
+		public Repository() { }
 
 		public Repository(string name, string url, string branch = "master")
 		{
@@ -23,7 +23,7 @@ namespace ReShadeManager.Core.Models
 		public void Deconstruct(out string name, out string url, out string branch)
 		{
 			name = Name;
-			url =  Url;
+			url = Url;
 			branch = Branch;
 		}
 	}

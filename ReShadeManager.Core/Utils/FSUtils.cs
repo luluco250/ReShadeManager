@@ -101,7 +101,7 @@ namespace ReShadeManager.Core.Utils
 				var procInfo = new ProcessStartInfo
 				{
 					FileName = "/bin/ln",
-					ArgumentList = {"-s"},
+					ArgumentList = { "-s" },
 					WindowStyle = ProcessWindowStyle.Hidden,
 					CreateNoWindow = true,
 					UseShellExecute = true,
